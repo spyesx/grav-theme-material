@@ -1,8 +1,0 @@
-.component__button{
-
-	@import "namespace/components/button/button--init";
-	@include buttonInit();
-	@import "namespace/components/button/button--size";
-	@import "namespace/components/button/button--color";
-
-}
