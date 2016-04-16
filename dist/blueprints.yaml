@@ -1,0 +1,35 @@
+name: Endless Iterations
+version: 0.0.1
+description: "Endless Iterations is a theme for Grav"
+icon: empire
+author:
+  name: Nicolas Bages
+  email: nicolas.bages@spyesx.fr
+  url: http://spyesx.fr
+homepage: https://github.com/spyesx/grav-theme-endlessiterations
+demo: http://spyesx.fr
+keywords: endlessiterations, theme
+bugs: https://github.com/spyesx/grav-theme-endlessiterations/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    default_lang:
+      type: text
+      size: x-small
+      label: Default lang
+      default: 'en'
+      validate:
+        type: text
+
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

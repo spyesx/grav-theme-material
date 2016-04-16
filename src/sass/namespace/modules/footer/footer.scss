@@ -1,0 +1,15 @@
+.module__footer{
+	color:$darkElectricBlue;
+	margin-top:3rem;
+	margin-bottom:1rem;
+
+	&__love{
+		color:$watermelon;
+		font-size:1rem;
+	}
+
+	a{
+		color:$darkElectricBlue;
+		border-bottom:1px $darkElectricBlue solid;
+	}
+}

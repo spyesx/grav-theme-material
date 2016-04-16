@@ -1,0 +1,30 @@
+{% extends "partials/base.twig" %}
+
+{% block content %}
+
+		{% set collection = page.collection() %}
+
+		<section>
+			<div class="row align-center">
+				<div class="columns medium-8">
+					{{ page.content }}
+				</div>
+			</div>
+		</section>
+
+		{% if config.plugins.breadcrumbs.enabled %}
+			{% include 'partials/breadcrumbs.html.twig' %}
+		{% endif %}
+
+		<section>
+			<div class="row">
+				<div class="columns">
+					{% for item in collection %}
+			        	{% include 'modules/post/preview/learned.twig' with {'parent':page, 'page':item, 'truncate':true} %}
+			    	{% endfor %}
+				</div>
+			</div>
+		</section>
+{% endblock %}
+
+

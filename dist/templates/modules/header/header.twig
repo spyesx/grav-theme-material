@@ -1,0 +1,35 @@
+<header id="module__header" class="module__header">
+	<nav rel="main">
+		<div class="row module__header__container">
+				<div class="columns small-12 medium-3">
+					<div class="module__header__logo">
+						<a href="{{ base_url == '' ? '/' : base_url }}">
+							{{ config.site.title }}<br />
+							{{ config.site.metadata.description }}
+						</a>
+					</div>
+				</div>
+				
+				<div  class="columns module__header__nav">
+					{% block header_extra %}{% endblock %}
+                	{% if config.plugins.langswitcher.enabled %}
+	                {% include 'partials/langswitcher.html.twig' %}
+	                {% endif %}
+	                
+	                {% block header_navigation %}
+	                	<ul>
+				        {% for page in pages.children.visible %}
+				            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+				            <li>
+				                <a href="{{ page.url }}" class="{{ current_page }}">
+				                    {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+				                    {{ page.menu }}
+				                </a>
+				            </li>
+				        {% endfor %}
+				        </ul>
+	                {% endblock %}
+				</div>
+		</div>
+	</nav>
+</header>

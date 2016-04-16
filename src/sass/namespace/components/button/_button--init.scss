@@ -1,0 +1,38 @@
+
+
+@mixin buttonInit() {
+	display:inline-flex;
+	justify-content: center;
+	border:none;
+	align-items: center;
+	border-radius:0.5rem;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:center;
+
+
+	@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
+	{
+			display:-webkit-inline-box !important;
+
+			&.hide{
+				display: none !important;
+			}
+	}
+
+	&.hide{
+		display: none !important;
+	}
+
+	&:focus{
+		outline:none;
+	}
+
+	@media #{$large-up} {
+		&:hover{
+			transition:all 0.2s;
+			transition-timing-function: $easeOutSine;
+			opacity:0.8;
+		}
+	}
+}

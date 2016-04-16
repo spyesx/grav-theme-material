@@ -1,0 +1,70 @@
+/*********************
+FONT FACE
+*********************/
+
+/* Fonts */
+
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('../fonts/inconsolata-regular-webfont.eot');
+    src: url('../fonts/inconsolata-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inconsolata-regular-webfont.woff2') format('woff2'),
+         url('../fonts/inconsolata-regular-webfont.woff') format('woff'),
+         url('../fonts/inconsolata-regular-webfont.ttf') format('truetype'),
+         url('../fonts/inconsolata-regular-webfont.svg#inconsolataregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'inconsolatabold';
+    src: url('../fonts/inconsolata-bold-webfont.eot');
+    src: url('../fonts/inconsolata-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inconsolata-bold-webfont.woff2') format('woff2'),
+         url('../fonts/inconsolata-bold-webfont.woff') format('woff'),
+         url('../fonts/inconsolata-bold-webfont.ttf') format('truetype'),
+         url('../fonts/inconsolata-bold-webfont.svg#inconsolatabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'monacoregular';
+    src: url('../fonts/monaco.eot');
+    src: url('../fonts/monaco.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/monaco.woff2') format('woff2'),
+         url('../fonts/monaco.woff') format('woff'),
+         url('../fonts/monaco.ttf') format('truetype'),
+         url('../fonts/monaco.svg#monacoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// font stacks
+
+$font-primary-regular      : 'monacoregular', Helvetica, Arial, sans-serif;
+
+
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  // -ms-word-break: break-all;
+  // -ms-word-wrap: break-all;
+  //    word-break: break-word;
+  // // sets a minimum number of characters before and after the break
+  // -webkit-hyphenate-before: 2;
+  //  -webkit-hyphenate-after: 3;
+  //          hyphenate-lines: 3;
+  // // enabling fancy ligatures when available
+  // -webkit-font-feature-settings: "liga", "dlig";
+  //  -moz-font-feature-settings: "liga=1, dlig=1";
+  //     -ms-font-feature-settings: "liga", "dlig";
+  //      -o-font-feature-settings: "liga", "dlig";
+  //         font-feature-settings: "liga", "dlig";
+}

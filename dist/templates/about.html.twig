@@ -1,0 +1,58 @@
+{% extends "partials/base.twig" %}
+
+{% block content %}
+
+		<section>
+			<div class="row align-center">
+				<div class="columns small-12">
+					<img src="{{ page.media['nico.jpg'].url }}" alt="" />
+				</div>
+			</div>
+			<div class="row align-right">
+				<div class="columns small-12 large-8 page__about__content">
+					<div class="page__about__content__wrapper">
+						{{ page.content }}
+					</div>
+				</div>
+				<div class="columns small-12 large-4">
+					<ul class="page__about__contact">
+						<li><a href="mailto:nicolas.bages@spyesx.fr">nicolas.bages@spyesx.fr</a></li>
+						<li><a href="http://facebook.com/spyesx">facebook.com/spyesx</a></li>
+						<li><a href="http://twitter.com/spyesx">twitter.com/spyesx</a></li>
+						<li><a href="http://flickr.com/spyesx">flickr.com/spyesx</a></li>
+						<li><a href="http://github.com/spyesx">github.com/spyesx</a></li>
+						<li><a href="http://linkedin.com/nicolasbages">linkedin.com/nicolasbages</a></li>
+						<li><a href="skype:nicolas.bages">skype</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</section>
+
+		<hr />
+
+		<section>
+			<div class="row">
+				<article class="columns small-12 medium-6 large-4">
+					<header>
+						<h2><a href="http://weinto.com">Weinto</a></h2>
+					</header>
+					<p>User experience designer and wed developer wanderlust.</p>
+				</article>
+				<article class="columns small-12 medium-6 large-4">
+					<header>
+						<h2><a href="http://sweetkoala.net">Sweet Koala</a></h2>
+					</header>
+					<p>A group of  digital craftworkers who share ideas, views and projects</p>
+				</article>
+				<article class="columns small-12 medium-6 large-4">
+					<header>
+						<h2><a href="/what-did-i-learn">What did I learn?</a></h2>
+					</header>
+					<p>A book I started to write on the road</p>
+				</article>
+			</div>
+		</section>
+
+{% endblock %}
+

@@ -1,0 +1,29 @@
+.page__about{
+	
+	&__content{
+		margin-top:1.5rem;
+		background:$oxfordBlue;
+		
+		@media #{$large-up} {
+			margin-top:0;
+			position:relative;
+			top:-3rem;
+			
+			&__wrapper{
+				padding:1.5rem;
+			}
+		}
+
+		
+	}
+
+	&__contact{
+		
+		color:$watermelon;
+
+		@media #{$large-up} {
+			margin-top:1.5rem;
+		}
+	}
+
+}

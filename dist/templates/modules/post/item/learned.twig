@@ -1,0 +1,21 @@
+<article class="module__post__item__learned">
+    <header class="row">
+        <div class="columns">
+            <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+        </div>
+    </header>
+    <div class="row">
+        <div class="columns">
+            {{ page.content }}
+        </div>
+    </div>
+
+</article>
+<div class="row module__post__item__learned__pagination">
+    <div class="columns small-12">
+        {% if not page.isLast %}<a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }} →</a>{% endif %}
+    </div>
+    <div class="columns small-12">
+        {% if not page.isFirst %}<a href="{{ page.nextSibling.url }}">← {{ page.nextSibling.title }}</a>{% endif %}
+    </div>
+</div>

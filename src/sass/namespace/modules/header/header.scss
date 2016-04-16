@@ -1,0 +1,55 @@
+.module__header{
+	
+	padding-top:2rem;
+	padding-bottom:2rem;
+	margin-bottom:4rem;
+	border-bottom:1px $blackPearl solid;
+
+	&__logo{
+		a{
+			color:$towerGrey;
+
+			@media #{$large-up} {
+				&:hover{
+					color:$white;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+	&__nav{
+		text-align:right;
+		ul,li{
+			list-style: none;
+			padding:0;
+			margin:0;
+			display:inline-block;
+		}
+
+		li{
+			margin-left:2rem;
+		}
+
+		a{
+			color:$towerGrey;
+
+			@media #{$large-up} {
+				&:hover{
+					color:$white;
+				}
+			}
+
+
+			&.active{
+				color:$lightSkyBlue;
+
+				@media #{$large-up} {
+					&:hover{
+						color:$lightSkyBlue;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+/*********************
+	Utils
+*********************/
+
+.fs {
+	width: 100%;
+	height: 100vh;
+}
+
+.cover {
+	@include background-size(cover !important);
+	display: block;
+}
+
+.cropped {
+	width: auto;
+	height: auto;
+	min-height: 101%;
+	min-width: 101%;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+.icon {
+	display: inline-block;
+	position: relative;
+
+	&--bullet {
+		&:before, &:after {
+			content: "•";
+			position: absolute;
+			display: block;
+			color: $black-color;
+		}
+
+		&:before {
+			bottom: -0.2rem;
+			left: -1.5rem;
+		}
+
+		&:after {
+			bottom: -0.1rem;
+			right: -1.5rem;
+		}
+	}
+
+	&--left {
+		@include rotate(90deg);
+	}
+
+	&--right {
+		@include rotate(-90deg);
+	}
+}
+
+.c-v {
+	height: 100%;
+	// letter-spacing: 0;
+	white-space: nowrap;
+	
+	&::before {
+		content: "";
+		width: 0;
+		height: 100%;
+		margin-right: -0.25em;
+	}
+
+	&::before, &__child {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__child {
+		white-space: normal;
+		width: 100%;
+	}
+}

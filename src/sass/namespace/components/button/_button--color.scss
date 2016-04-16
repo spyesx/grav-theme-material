@@ -1,0 +1,29 @@
+&--redline{
+	background:$red;
+	color:$white;
+
+	&:hover{
+		color:$white;
+	}
+
+	&:active, &:focus{
+		color:$white ;
+	}
+}
+&--register{
+	background:$yellow;
+}
+&--contact, &--light{
+	background:$lightblue;
+}
+&--default{
+	background:$grey;
+	color:$white;
+
+	&:hover{
+		color:$white;
+	}
+	&:active, &:focus{
+		color:$white ;
+	}
+}

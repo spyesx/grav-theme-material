@@ -1,0 +1,43 @@
+title: Activities
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: about/activities
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: about/activities
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        activities:
+          type: tab
+          title: Activities
+          fields:
+            header.activities:
+              name: activities
+              type: list
+              label: Activities
+
+              fields:
+                .icon:
+                  type: text
+                  label: Icon
+                .header:
+                  type: text
+                  label: Header
+                .link:
+                  type: text
+                  label: Link
+                .text:
+                  type: text
+                  label: Text
