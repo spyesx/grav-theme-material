@@ -1,14 +1,14 @@
 'use strict';
 
-var theme = 'endlessiterations';
+var theme = 'dist';
 
 module.exports = {
 
 	'lang'        : 'en',
 	'domain'      : 'spyesx.dev',
-	'title'       : "Spyesx",
+	'title'       : "grav-theme-material",
 	'src'         : 'src/',
-	'www'         : 'www/user/themes/'+theme+'/',
+	'www'         : theme+'/',
 	'dist'        : 'dist/',
 	'serverport'  : 3000,
 
@@ -25,12 +25,12 @@ module.exports = {
 		},
 
 		'clean': {
-			'dev' : ['www/user/themes/'+theme+'/css', 'www/user/themes/'+theme+'/library/js']
+			'dev' : [theme+'/css', theme+'/library/js']
 		},
 
 		'copy': {
 			'src': [],
-			'dest': 'www/user/themes/'+theme+'',
+			'dest': theme+'',
 		},
 
 		'deploy': {
@@ -44,18 +44,18 @@ module.exports = {
 
 		'fonts': {
 			'src' : ['src/fonts/**/*'],
-			'dest': 'www/user/themes/'+theme+'/fonts'
+			'dest': theme+'/fonts'
 		},
 
 		'gzip': {
 			'src': 'www/**/*.{html,xml,json,css,js,js.map}',
-			'dest': 'www/user/themes/'+theme+'/',
+			'dest': theme+'/',
 			'options': {}
 		},
 
 		'images': {
 			'src' : 'src/img/**/*',
-			'dest': 'www/user/themes/'+theme+'/images/'
+			'dest': theme+'/images/'
 		},
 
 		'langs': {
@@ -65,12 +65,12 @@ module.exports = {
 		'styles': {
 			'watch' : ['src/sass/**/*.scss'],
 			'src' : [/*'../../node_modules/foundation-sites/scss/', */'src/sass/style'],
-			'dest': 'www/user/themes/'+theme+'/css'
+			'dest': theme+'/css'
 		},
 
 		'scripts': {
 			'src' : ['src/js/**/*.js', '!src/js/lib/**/*'],
-			'dest': 'www/user/themes/'+theme+'/js'
+			'dest': theme+'/js'
 		},
 
 		'test': {

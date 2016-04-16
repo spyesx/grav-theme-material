@@ -1,15 +1,15 @@
-name: Endless Iterations
+name: Material
 version: 0.0.1
-description: "Endless Iterations is a theme for Grav"
+description: "Material is a theme for Grav"
 icon: empire
 author:
   name: Nicolas Bages
   email: nicolas.bages@spyesx.fr
   url: http://spyesx.fr
-homepage: https://github.com/spyesx/grav-theme-endlessiterations
+homepage: https://github.com/spyesx/grav-theme-material
 demo: http://spyesx.fr
-keywords: endlessiterations, theme
-bugs: https://github.com/spyesx/grav-theme-endlessiterations/issues
+keywords: material, theme
+bugs: https://github.com/spyesx/grav-theme-material/issues
 license: MIT
 
 form:
